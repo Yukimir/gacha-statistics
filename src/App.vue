@@ -166,7 +166,7 @@ export default {
       // 通知socket服务器换房间
       this.$socket.emit('join-user', this.username)
       $.ajax({
-        url: 'http://127.0.0.1:9980/record/' + this.username,
+        url: '/record/' + this.username,
         type: 'GET',
         dataType: 'json',
         success: (data) => {
@@ -188,7 +188,7 @@ export default {
       if (this.pknum === '') return
       this.$socket.emit('join-event', this.pknum)
       $.ajax({
-        url: 'http://127.0.0.1:9980/record/event/' + this.pknum,
+        url: '/record/event/' + this.pknum,
         type: 'GET',
         dataType: 'json',
         success: (data) => {

@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import VueSocketio from 'vue-socket.io'
 import App from './App'
-Vue.use(VueSocketio, 'http://localhost:9980')
+Vue.use(VueSocketio, 'http://221.131.68.230:9980')
 
 /* eslint-disable no-new */
 new Vue({
